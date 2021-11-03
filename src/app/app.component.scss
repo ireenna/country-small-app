@@ -1,0 +1,59 @@
+.line{
+    position: fixed;
+    border:none;
+    border-top:1px dashed blue;
+    border-left:1px dashed blue;
+    display: none;
+    
+}
+
+.table{
+    position: relative;
+    width: fit-content;
+    cursor: pointer;
+    li{
+        width: fit-content;
+        display: inline;
+    }
+    
+}
+
+.top{
+    width:100vw;
+    height:2px;
+    left:0;
+}
+
+.left{
+    width:2px;
+    height:100vh;
+    top:0;
+}
+
+.right{
+    width:2px;
+    height:100vh;
+    top:0;
+    right:0;
+}
+
+.bottom{
+    width: 100vw;
+    height: 2px;
+    left:0;
+    bottom:0
+}
+
+:host ::ng-deep{
+    .selectionmode{
+        li:hover, #info .someinfo:hover{
+            cursor: pointer;
+            background-color: rgb(204, 204, 255);
+            .line{
+                display: inline-block;
+            }
+        }
+    }
+    
+}
+
